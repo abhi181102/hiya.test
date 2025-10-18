@@ -28,7 +28,7 @@
 ### Step 3: Environment Variables
 Add these environment variables in Render:
 - `NODE_ENV` = `production`
-- `MONGODB_URI` = `your_mongodb_connection_string`
+- `MONGODB_URI` = `mongodb+srv://abhi69432_db_user:abhi181102@cluster0.5ggwd0v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
 - `PORT` = (automatically set by Render)
 
 ### Step 4: Deploy
