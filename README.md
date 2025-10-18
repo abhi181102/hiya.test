@@ -21,6 +21,8 @@ This Contact Manager API provides a RESTful interface for managing contact infor
 - **Error Handling**: Detailed error responses with appropriate HTTP status codes
 - **CORS Support**: Cross-origin resource sharing enabled
 - **Environment Configuration**: Secure database credentials management
+- **Dummy Data**: Pre-populated with 10 sample contacts for testing
+- **Seed Script**: Easy database population with `npm run seed`
 
 ## API Endpoints
 
@@ -78,8 +80,8 @@ This Contact Manager API provides a RESTful interface for managing contact infor
 
 1. **Clone the repository**
    ```bash
-   git clone [your-repository-url]
-   cd contact-manager-api
+   git clone https://github.com/abhi181102/hiya.test.git
+   cd hiya.test
    ```
 
 2. **Install dependencies**
@@ -91,12 +93,17 @@ This Contact Manager API provides a RESTful interface for managing contact infor
    - Copy `env.example` to `.env`
    - Update the MongoDB connection string with your credentials:
    ```env
-   MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/contact-manager?retryWrites=true&w=majority
+   MONGODB_URI=mongodb+srv://abhi69432_db_user:abhi181102@cluster0.5ggwd0v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
    PORT=3000
    NODE_ENV=development
    ```
 
-4. **Start the application**
+4. **Seed the database with dummy data**
+   ```bash
+   npm run seed
+   ```
+
+5. **Start the application**
    ```bash
    npm start
    ```
