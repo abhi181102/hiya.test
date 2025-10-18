@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: contact-manager
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        value: mongodb+srv://abhi69432_db_user:abhi181102@cluster0.5ggwd0v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+    healthCheckPath: /

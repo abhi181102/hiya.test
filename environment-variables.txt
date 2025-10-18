@@ -1,0 +1,14 @@
+# Environment Variables for Contact Manager
+# Copy these to your .env file or set them in your deployment platform
+
+# MongoDB Atlas connection URI
+MONGODB_URI=mongodb+srv://abhi69432_db_user:abhi181102@cluster0.5ggwd0v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+# Port your Express app will run on
+PORT=3000
+
+# Environment
+NODE_ENV=development
+
+# For Production Deployment (Render/Heroku/etc):
+# Set these environment variables in your deployment platform
