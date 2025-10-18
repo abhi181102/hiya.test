@@ -30,7 +30,7 @@ mongoose.connect(process.env.MONGODB_URI)
 // Routes
 // --------------------
 const contactsRouter = require('./routes/contacts');
-app.use('/contacts', contactsRouter);
+app.use('/api/contacts', contactsRouter);
 
 // --------------------
 // Root Route
