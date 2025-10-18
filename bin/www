@@ -1,0 +1,39 @@
+#!/usr/bin/env node
+
+// www - Entry point to start the Express server
+// Author: Hiyaben Hareshbhai Jayswal
+
+const app = require('../app');
+const http = require('http');
+
+const PORT = process.env.PORT || 3000;
+app.set('port', PORT);
+
+const server = http.createServer(app);
+
+// Handle server errors gracefully
+server.on('error', (error) => {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  const bind = typeof PORT === 'string' ? 'Pipe ' + PORT : 'Port ' + PORT;
+
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+});
+
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`🚀 Server running on port ${PORT}`);
+  console.log(`🌐 Environment: ${process.env.NODE_ENV || 'development'}`);
+});
