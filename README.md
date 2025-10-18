@@ -21,7 +21,7 @@ This Contact Manager API provides a RESTful interface for managing contact infor
 - **Error Handling**: Detailed error responses with appropriate HTTP status codes
 - **CORS Support**: Cross-origin resource sharing enabled
 - **Environment Configuration**: Secure database credentials management
-- **Dummy Data**: Pre-populated with 10 sample contacts for testing
+- **Dummy Data**: Pre-populated with 3 sample contacts for testing
 - **Seed Script**: Easy database population with `npm run seed`
 
 ## API Endpoints
@@ -73,6 +73,16 @@ This Contact Manager API provides a RESTful interface for managing contact infor
   updatedAt: Date (auto-generated)
 }
 ```
+
+## Sample Data
+
+The database is seeded with 3 sample contacts:
+
+1. **Hiya H Jayswal** - jhiya@gmail.com (Ontario, L4N 6Z7)
+2. **Dhruv V Patel** - dpatel@gmail.com (Ontario, L4M 812)  
+3. **Maya H Jayswal** - jayswalm@gmail.com (Ontario, L3R 4H1)
+
+*Author: Hiyaben Hareshbhai Jayswal*
 
 ## Installation & Setup
 

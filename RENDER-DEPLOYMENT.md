@@ -47,6 +47,11 @@ Make sure your code is pushed to a Git repository (GitHub recommended).
    - Click "Create Web Service"
    - Render will automatically build and deploy your application
 
+7. **Seed Database (Optional)**:
+   - After deployment, you can seed the database with dummy data
+   - Run locally: `npm run seed`
+   - This populates your MongoDB Atlas database with 10 sample contacts
+
 ### 4. Get Your Live URL
 After deployment, Render will provide you with a URL like:
 `https://your-app-name.onrender.com`
